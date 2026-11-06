@@ -13,4 +13,4 @@ jobs:
         run: uv run python -m evalkit run --target examples.demo_app:answer --name ci --fail-under 0.95
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          APP_VARIANT: v1
+          APP_VARIANT: v2
