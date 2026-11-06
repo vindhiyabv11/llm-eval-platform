@@ -1,0 +1,16 @@
+name: eval
+on: [push, pull_request]
+
+jobs:
+  eval:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - run: uv sync
+      - run: uv run pytest -q
+      - name: Run evals with quality gate
+        run: uv run python -m evalkit run --target examples.demo_app:answer --name ci --fail-under 0.95
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          APP_VARIANT: v2

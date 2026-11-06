@@ -1,0 +1,30 @@
+{"id": "price_pro", "input": "How much does the Pro plan cost?", "expected": "The Pro plan costs $49 per month.", "tags": ["factual"], "must_contain": ["49"]}
+{"id": "storage_starter", "input": "How much storage does the Starter plan include?", "expected": "The Starter plan includes 10 GB of storage.", "tags": ["factual"], "must_contain": ["10"]}
+{"id": "refund_monthly", "input": "Can I get a refund on a monthly plan?", "expected": "No, monthly plans are not refundable.", "tags": ["factual"]}
+{"id": "support_starter", "input": "How fast is support for Starter users?", "expected": "Starter users get email support with a 48-hour response time.", "tags": ["factual"], "must_contain": ["48"]}
+{"id": "datacenters", "input": "Where are the data centers located?", "expected": "Frankfurt, Virginia, and Singapore.", "tags": ["factual"], "must_contain": ["Frankfurt", "Virginia", "Singapore"]}
+{"id": "twofa", "input": "Is two-factor authentication required?", "expected": "It is mandatory for admin accounts and optional for regular users.", "tags": ["factual"]}
+{"id": "ratelimit_pro", "input": "What is the API rate limit on the Pro plan?", "expected": "1000 requests per minute.", "tags": ["factual"]}
+{"id": "cancel", "input": "How do I cancel my subscription?", "expected": "Go to Settings, then Billing, and click Cancel Plan. It takes effect at the end of the billing period.", "tags": ["howto"]}
+{"id": "compare_plans", "input": "Compare the Starter and Pro plans on projects and support.", "expected": "Starter: 5 projects and email support with a 48-hour response. Pro: unlimited projects and 24/7 chat support.", "tags": ["multi_hop"]}
+{"id": "free_trial", "input": "Does Acme Cloud offer a free trial?", "expected": "The information is not available; the assistant should say it does not know.", "tags": ["unanswerable"]}
+{"id": "ceo_name", "input": "Who is the CEO of Acme Cloud?", "expected": "The information is not available; the assistant should say it does not know.", "tags": ["unanswerable"]}
+{"id": "price_starter", "input": "How much is the Starter plan?", "expected": "The Starter plan costs $10 per month.", "tags": ["factual"], "must_contain": ["10"]}
+{"id": "price_enterprise", "input": "What does the Enterprise plan cost?", "expected": "Enterprise has custom pricing.", "tags": ["factual"]}
+{"id": "projects_pro", "input": "How many projects can I create on the Pro plan?", "expected": "Unlimited projects.", "tags": ["factual"], "must_contain": ["unlimited"]}
+{"id": "storage_pro", "input": "How much storage does Pro give me?", "expected": "The Pro plan includes 500 GB of storage.", "tags": ["factual"], "must_contain": ["500"]}
+{"id": "refund_annual", "input": "Can I get a refund on an annual plan?", "expected": "Yes, within 30 days of purchase.", "tags": ["factual"], "must_contain": ["30"]}
+{"id": "support_pro", "input": "Does the Pro plan have 24/7 support?", "expected": "Yes, 24/7 support via chat.", "tags": ["factual"]}
+{"id": "ratelimit_starter", "input": "What is the API rate limit on Starter?", "expected": "100 requests per minute.", "tags": ["factual"], "must_contain": ["100"]}
+{"id": "para_stop_paying", "input": "I want to stop paying for Acme Cloud. What are the steps?", "expected": "Go to Settings, then Billing, and click Cancel Plan. It takes effect at the end of the billing period.", "tags": ["paraphrase"]}
+{"id": "para_midtier", "input": "What is the monthly price of the mid-tier plan?", "expected": "The Pro plan, the middle tier, costs $49 per month.", "tags": ["paraphrase"], "must_contain": ["49"]}
+{"id": "para_regions", "input": "In which regions is my data stored?", "expected": "Frankfurt, Virginia, and Singapore.", "tags": ["paraphrase"], "must_contain": ["Frankfurt", "Virginia", "Singapore"]}
+{"id": "para_admin_2fa", "input": "Do admins have to turn on 2FA?", "expected": "Yes, two-factor authentication is mandatory for admin accounts.", "tags": ["paraphrase"]}
+{"id": "multi_rate_diff", "input": "Which plan has the higher API rate limit, and by how much?", "expected": "Pro, with 1000 requests per minute versus 100 on Starter, which is 10 times higher.", "tags": ["multi_hop"]}
+{"id": "multi_chat_plans", "input": "Which plans get 24/7 chat support?", "expected": "Pro and Enterprise.", "tags": ["multi_hop"], "must_contain": ["Pro", "Enterprise"]}
+{"id": "multi_cancel_monthly", "input": "If I cancel my monthly plan, do I get money back, and when does it end?", "expected": "No, monthly plans are not refundable. Cancellation takes effect at the end of the billing period.", "tags": ["multi_hop"]}
+{"id": "multi_starter_limits", "input": "How many projects and how much storage does Starter include?", "expected": "5 projects and 10 GB of storage.", "tags": ["multi_hop"], "must_contain": ["5", "10"]}
+{"id": "unans_phone", "input": "Do you offer phone support?", "expected": "The information is not available; the assistant should say it does not know.", "tags": ["unanswerable"]}
+{"id": "unans_student", "input": "Is there a student discount?", "expected": "The information is not available; the assistant should say it does not know.", "tags": ["unanswerable"]}
+{"id": "unans_sla", "input": "What is the uptime SLA?", "expected": "The information is not available; the assistant should say it does not know.", "tags": ["unanswerable"]}
+{"id": "unans_hq", "input": "Where is Acme Cloud headquartered?", "expected": "The information is not available; the assistant should say it does not know.", "tags": ["unanswerable"]}
